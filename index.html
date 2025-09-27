@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Giới thiệu bản thân - 23521609</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .container { border: 2px solid #c7d0db; padding: 16px; width: 720px; margin-bottom: 20px; }
+
+    h1, h2, h3, h4 {
+      font-size: 24px;
+      -webkit-text-stroke: 1px black; 
+    }
+
+    #gioi-thieu { background: #F3FDE8; }
+    #lien-he { 
+      background: url("pattern.png") repeat;
+      text-align: center;
+    }
+
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    td, th { border: 1px solid black; padding: 8px; }
+
+    nav, footer {
+      background: #d4f2f4;
+      color: #0b0848;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a { color: #0b0848; text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#gioi-thieu">Giới thiệu bản thân</a> | 
+    <a href="#lien-he">Gửi thông tin và liên hệ cùng tôi</a>
+  </nav>
+
+  <h1 style="color:#CAEDFF;">Giới thiệu bản thân</h1>
+  <div class="container" id="gioi-thieu">
+    <img class="avatar" src="IMG_3194.jpeg" alt="Ảnh đại diện" width="120" height="160" style="display:block; margin:0 auto;" />
+
+    <h2 style="color:#D8B4F8;">Thông tin cơ bản</h2>
+    <ul>
+      <li><strong>Tên:</strong> Nguyễn Phú Toàn</li>
+      <li><strong>Năm sinh:</strong> 2005</li>
+      <li><strong>Chuyên ngành:</strong> Hệ thống thông tin</li>
+    </ul>
+
+    <h3 style="color:#FFC7EA;">Sở thích</h3>
+    <ul>
+      <li><strong>Món ăn</strong>
+        <ol>
+          <li>Phở</li>
+          <li>Bún chả</li>
+          <li>Bánh mì</li>
+        </ol>
+      </li>
+      <li><strong>Giải trí</strong>
+        <ul>
+          <li>Trò chơi
+            <ul>
+              <li>PUBG</li>
+              <li>Liên Quân</li>
+            </ul>
+          </li>
+          <li>Bài hát yêu thích
+            <ul>
+              <li>"Two years" - Rosé</li>
+              <li>"We can't be friends" - Ariana Grande</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3 style="color:#FFC7EA;">Mục tiêu của bản thân</h3>
+    <table>
+      <tr>
+        <th>Mục tiêu</th>
+        <th>Thời hạn</th>
+        <th>Hoàn thành</th>
+      </tr>
+      <tr>
+        <td>Trung bình điểm môn web đạt 8.0</td>
+        <td>30/12/2025</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Đạt chứng chỉ ngoại ngữ đạt chuẩn tốt nghiệp</td>
+        <td>01/06/2026</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Xin việc vị trí backend developer</td>
+        <td>01/09/2027</td>
+        <td><input type="checkbox"></td>
+      </tr>
+    </table>
+  </div>
+
+  <h2 style="color:#D8B4F8;">Gửi thông tin và liên hệ cùng tôi</h2>
+  <div class="container" id="lien-he">
+    <form>
+      <label for="name">Họ và tên:</label><br/>
+      <input type="text" id="name" name="name"><br/><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email"><br/><br/>
+
+      <label for="message">Tin nhắn:</label><br/>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br/><br/>
+
+      <label>Giới tính:</label><br/>
+      <input type="radio" name="gender" value="Nam"> Nam
+      <input type="radio" name="gender" value="Nữ"> Nữ<br/><br/>
+
+      <label>Sở thích:</label><br/>
+      <input type="checkbox" name="hobby" value="Nghe nhạc"> Nghe nhạc
+      <input type="checkbox" name="hobby" value="Bơi lội"> Bơi lội
+      <input type="checkbox" name="hobby" value="Biển"> Biển<br/><br/>
+
+      <label for="major">Ngành:</label>
+      <select id="major" name="major">
+        <option value="CNTT">Công nghệ thông tin</option>
+        <option value="HTTT">Hệ thống thông tin</option>
+        <option value="KHMT">Khoa học máy tính</option>
+      </select><br/><br/>
+
+      <label for="phone">Số điện thoại:</label><br/>
+      <input type="text" id="phone" name="phone"><br/><br/>
+
+      <button type="submit">Gửi</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>@2024 MSSV 23521609 - Nguyễn Phú Toàn</p>
+  </footer>
+</body>
+</html>
